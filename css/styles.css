@@ -91,6 +91,7 @@ header{
     background-image: linear-gradient(to bottom, rgba(222, 90, 90, 0.136), rgba(255, 255, 0, 0.012));
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    
 }
 .zcontainer{
     display: grid;
