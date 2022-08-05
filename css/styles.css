@@ -23,6 +23,7 @@ main {
 
 .carousel-indicators button {
     background-color: rgb(0, 0, 0);
+    color: blueviolet;
 }
 
 .carousel-control-next-icon {
@@ -31,6 +32,7 @@ main {
 
 .carousel-control-prev-icon {
     background-color: black;
+    ;
 }
 
 .icon-shop img{
@@ -42,17 +44,23 @@ main {
 }
 
 .topnav, .contact{
-    display: flex;
+    display: inline-flex;
     text-align: center;
     flex-wrap: nowrap;
     justify-content: end;
+    background-color: none;
 }
 .topnav a{
     text-decoration: none;
     margin: 0 5px 0 0;
+    color: black;
+    padding: 0 10px;
 }
-.topnav .disabled{
-    color: grey;
+.topnav a:hover{
+    color: blueviolet;
+}
+.topnav a.active{
+    color: blueviolet;
 }
 .navtitle{
     text-align: inherit;
@@ -66,10 +74,17 @@ main {
 .hmenu a, .contact a{
     text-decoration: none;
     margin: 0 5px 0 0;
+    color: black;
+    padding: 0 10px;
 }
-.hmenu .disabled{
-    color: grey;
+.hmenu .active{
+    color: blueviolet;
 }
+
+.hmenu a:hover{
+    color: blueviolet;
+}
+
 .socialnav{
     text-align: center;
     margin-top: 40px;
@@ -83,6 +98,10 @@ main {
     text-decoration: none;
     margin: 0 5px 0 0;
 }
+.socialnav a{
+    padding: 0 10px;
+}
+
 header{
     grid-area: nav;
     display: grid;
