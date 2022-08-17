@@ -94,7 +94,6 @@
     flex-direction: row;
   }
   .socialnav a, .contact .disabled{
-    color: grey;
     text-decoration: none;
     margin: 0 5px 0 0;
   }
@@ -243,4 +242,31 @@
     width: 200px;
     height: 200px;
     }
+  }
+
+  $socialnav: ( 
+    i: pink,
+    f: blue,
+    t: lightblue
+);
+
+@each $smedia, $color in $socialnav {
+    .social-#{$smedia} {
+        color:$color
+    }
+}
+
+@mixin sizes($margin, $padding,) {
+  margin: $margin;
+  padding: $padding;
+}
+
+body { 
+
+@include sizes(10px, 10px,)
+}
+
+.contact {
+  @extend .topnav;
+  font-size: 12px;
   }

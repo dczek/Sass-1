@@ -53,18 +53,18 @@ main {
   background-color: none;
 }
 
-.topnav a {
+.topnav a, .contact a {
   text-decoration: none;
   margin: 0 5px 0 0;
   color: black;
   padding: 0 10px;
 }
 
-.topnav a:hover {
+.topnav a:hover, .contact a:hover {
   color: blueviolet;
 }
 
-.topnav a.active {
+.topnav a.active, .contact a.active {
   color: blueviolet;
 }
 
@@ -104,7 +104,6 @@ main {
 }
 
 .socialnav a, .contact .disabled {
-  color: grey;
   text-decoration: none;
   margin: 0 5px 0 0;
 }
@@ -261,6 +260,26 @@ footer {
     width: 200px;
     height: 200px;
   }
+}
+.social-i {
+  color: pink;
+}
+
+.social-f {
+  color: blue;
+}
+
+.social-t {
+  color: lightblue;
+}
+
+body {
+  margin: 10px;
+  padding: 10px;
+}
+
+.contact {
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=styles.css.map */
