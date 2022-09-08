@@ -23,6 +23,9 @@ main {
   -o-background-size: cover;
   background-size: 420px;
 }
+.carousel-item:hover {
+transform: scale(1.2);
+}
 
 .carousel-indicators button {
   background-color: rgb(0, 0, 0);
@@ -35,6 +38,31 @@ main {
 
 .carousel-control-prev-icon {
   background-color: black;
+}
+.pageDescription{
+  display: contents;
+  margin: 10px;
+  max-width: 175px;
+  max-height: 30px;
+  text-align: center;
+}
+.pageDescription h5{
+  transition: width 2s;
+  color: gray;
+  text-transform: uppercase;
+  height: 50px;
+  margin-top: 30px;
+}
+.pageDescription .hide{
+  display: none;
+}
+.pageDescription h5:hover + .hide{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-weight:300;
+  width: 850px;
+  color: grey;
 }
 
 .icon-shop img {
@@ -97,7 +125,7 @@ main {
 .socialnav {
   text-align: center;
   margin-top: 40px;
-  margin-left: 15%;
+  margin-left: 10%;
   margin-right: 5%;
   display: flex;
   flex-direction: row;
@@ -110,6 +138,16 @@ main {
 
 .socialnav a {
   padding: 0 10px;
+    border: 1px solid;
+    flex: auto;
+    place-self: flex-start;
+}
+
+i {
+  transition: transform .2s;
+}
+i:hover{
+  transform: scale(1.2);
 }
 
 header {
@@ -134,7 +172,7 @@ header {
 
 .pageTitle {
   position: relative;
-  left: 17%;
+  left: 40%;
   top: 5px;
 }
 
@@ -161,6 +199,10 @@ header {
 img {
   width: 380px;
   height: 380px;
+  transition: transform .2s;
+}
+img:hover{
+  transform: scale(1.2);
 }
 
 .zdescripcion {
@@ -226,6 +268,9 @@ footer {
   }
 }
 @media (max-width: 600px) {
+  .icon-footer{
+    margin-left: 9%;
+  }
   .zcontainer {
     display: flex;
     flex-wrap: wrap;
@@ -244,14 +289,35 @@ footer {
   .copyright {
     font-size: 10px;
     margin: 0;
-    margin-left: 5%;
   }
-  .topnav, .contact, .hmenu {
-    margin-left: 8%;
+  .navbar-brand a{
+    font-size: 1rem;
   }
   .socialnav {
     text-align: center;
-    margin-left: 5%;
+    margin-left: 20%;
+  }
+  .pageDescription h5{
+    transition: width 2s;
+    color: gray;
+    text-transform: uppercase;
+    height: 70px;
+    margin-top: 50px;
+  }
+  .pageDescription .hide{
+    display: none;
+  }
+  .pageDescription h5:hover + .hide{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-weight:300;
+    width: 350px;
+    color: grey;
+  }
+  .zdescripcion .descripcion{
+    width: 65%;
+    margin: 0;
   }
 }
 @media (min-width: 600px) and (max-width: 1100px) {
@@ -260,6 +326,15 @@ footer {
     width: 200px;
     height: 200px;
   }
+  .pageDescription h5:hover + .hide{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-weight:300;
+    width: 250px;
+    color: grey;
+  }
+
 }
 .social-i {
   color: pink;
